@@ -1,9 +1,9 @@
-var platform = require("os").platform();
+const platform = require("os").platform();
 
 function _check() {
-    return new Promise(resolve => {
+    return new Promise(resolve => { // Has to be a promise since Windows can take quite a while to respond under some circumstances
         if (platform == "win32" || platform == "win64") {
-            require('child_process').exec('net session', function (err, stdout, stderr) {
+            require('child_process').exec('net session', function (err, stdout, stderr) { // "net session" will return an error when admin privileges are not present 
                 if (err) {
                     resolve(false);
                 } else {
@@ -11,14 +11,11 @@ function _check() {
                 }
             });
         } else {
-            throw new Error('Can not determine if admin priviliges are present or not')
+            throw new Error('Can not determine if admin priviliges are present or not. This package is only compatible with Windows OS')
         }
-    });
+      });
 }
-
 
 exports.check = async function () {
-    var result = await _check();
-    return result
-
-}
+        return await _check();
+    }
