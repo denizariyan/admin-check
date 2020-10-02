@@ -1,0 +1,26 @@
+{
+  "name": "admin-check",
+  "version": "1.1.0",
+  "description": "package to check if the script is runnig with admin permissions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denizariyan/admin-check.git"
+  },
+  "keywords": [
+    "admin",
+    "permission",
+    "check",
+    "is-admin",
+    "administrator"
+  ],
+  "author": "denizariyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denizariyan/admin-check/issues"
+  },
+  "homepage": "https://github.com/denizariyan/admin-check#readme"
+}
