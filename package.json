@@ -1,6 +1,6 @@
 {
   "name": "admin-check",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "package to check if the script is running with admin permissions",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,15 @@
     "administrator",
     "is",
     "admin",
-    "root",
-    "if admin"
+    "if admin",
+    "windows",
+    "win32",
+    "win64",
+    "running",
+    "command-line",
+    "cmd",
+    "is admin",
+    "detect"
   ],
   "author": "denizariyan",
   "license": "MIT",
