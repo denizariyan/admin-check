@@ -2,6 +2,8 @@
 
 ![Version](https://img.shields.io/github/v/release/denizariyan/admin-check)
 ![Node.js CI](https://github.com/denizariyan/admin-check/workflows/Node.js%20CI/badge.svg)
+![Downloads](https://img.shields.io/npm/dt/admin-check.svg)
+
 
 Admin Check is an NPM package to check if the current script is running with admin privileges. 
 
